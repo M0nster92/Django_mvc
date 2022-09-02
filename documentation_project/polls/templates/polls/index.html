@@ -1,4 +1,9 @@
-<h3>Home!!</h3>
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
+<h3 class="h1">Home!!</h3>
 {% if latest_question_list %}
 <ul>
   {% for question in latest_question_list %}
